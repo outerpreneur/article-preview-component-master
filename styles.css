@@ -1,0 +1,97 @@
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --ff: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    height: 100vh;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+}
+
+.furniture {
+    width: 40%;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    flex-grow: 2;
+}
+
+.column h3 {
+    font-size: 1.6rem;
+}
+
+.column p {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.column-down {
+    display: flex;
+    margin-top: 25px;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+.name {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.name::first-line {
+    font-weight: bold;
+}
+
+.name:last-of-type {
+    font-weight: lighter;
+}
+
+.share {
+    width: 20px;
+    height: 20px;
+    transform: translateY(10px);
+}
+
+@media only screen and (max-width: 700px) {
+
+    body {}
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .furniture {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+}
